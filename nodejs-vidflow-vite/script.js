@@ -9,10 +9,10 @@ async function buscarEMostrarVideos() {
   : 
   "http://localhost:3000/videos";
   */
- 
+
   try {
     const busca = await axios.get(urlVideos);
-    
+
     const videos = busca.data;
 
     videos.forEach((video) => {
